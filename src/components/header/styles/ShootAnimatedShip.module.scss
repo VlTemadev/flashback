@@ -1,0 +1,81 @@
+$container-height-desktop: 40px;
+$container-height-mobile: 40px;
+$gap-desktop: 8px;
+$gap-mobile: 8px;
+$ship-width-desktop: 32px;
+$ship-width-mobile: 26px;
+$shoot-line-height-desktop: 6px;
+$shoot-line-height-mobile: 6px;
+
+.container {
+  position: relative;
+  display: flex;
+  align-items: center;
+  height: $container-height-desktop;
+  gap: $gap-desktop;
+  overflow: visible;
+}
+
+.ship {
+  width: $ship-width-desktop;
+  height: auto;
+  flex-shrink: 0;
+  user-select: none;
+  animation: shipFloat 2s ease-in-out infinite;
+}
+
+.shootLine {
+  flex: 1;
+  height: $shoot-line-height-desktop;
+  overflow: visible;
+  position: relative;
+}
+
+.shootLineSegment {
+  stroke-linecap: round;
+  stroke-dasharray: 2 4;
+  animation: shootMove 1.2s linear infinite;
+  will-change: transform, opacity;
+  opacity: 0;
+}
+
+@keyframes shipFloat {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-4px);
+  }
+}
+
+@keyframes shootMove {
+  0% {
+    transform: translateX(0%);
+    opacity: 0;
+  }
+  10% {
+    opacity: 1;
+  }
+  90% {
+    opacity: 1;
+  }
+  100% {
+    transform: translateX(100%);
+    opacity: 0;
+  }
+}
+
+/* --- Адаптив --- */
+@media (max-width: 600px) {
+  .container {
+    height: $container-height-mobile;
+    gap: $gap-mobile;
+  }
+  .ship {
+    width: $ship-width-mobile;
+  }
+  .shootLine {
+    height: $shoot-line-height-mobile;
+  }
+}
