@@ -1,0 +1,29 @@
+.catalogBlock {
+  display: flex;
+  position: relative;
+  width: max-content;
+  align-items: center;
+  margin: 32px auto;
+
+  .catalogImg {
+    position: absolute;
+    left: -8px;
+    z-index: 10;
+
+    @media (min-width: 768px) {
+      width: 54px;
+      left: -8%;
+    }
+  }
+  .catalogText {
+    background-color: blue;
+    font-size: 16px;
+    color: white;
+    padding: 0 10px 0 30px;
+
+    @media (min-width: 768px) {
+      font-size: 34px;
+      max-width: 100%;
+    }
+  }
+}

@@ -1,10 +1,12 @@
 import { Trans, useTranslation } from "react-i18next";
 import { Container } from "../container/Container";
 import ShitShoot from "../header/ShootAnimatedShip";
-import btn from "@/assets/img/button.png";
 import styles from "./styles/Start.module.scss";
+import ModalContactForm from "../form-modal/ModalContactForm";
+import { useState } from "react";
 
 export default function Start() {
+  const [modalOpen, setModalOpen] = useState(false);
   const { i18n } = useTranslation();
   return (
     <section className={styles.bgImageBlock}>
@@ -26,6 +28,24 @@ export default function Start() {
             />
           </p>
         </div>
+        <div className={styles.bottomTextBlock}>
+          <button
+            className={styles.okButton}
+            type="submit"
+            onClick={() => {
+              setModalOpen(true);
+            }}
+          >
+            START
+          </button>
+          <p className={styles.bottomText}>
+            <Trans key={i18n.language} i18nKey="rent_our_arcade_machine" />
+          </p>
+        </div>
+        <ModalContactForm
+          open={modalOpen}
+          onClose={() => setModalOpen(false)}
+        />
       </div>
     </section>
   );

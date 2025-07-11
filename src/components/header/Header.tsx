@@ -4,15 +4,20 @@ import facebook from "@/assets/icons/Facebook.png";
 import youtube from "@/assets/icons/YouTube.png";
 import instagram from "@/assets/icons/Instagram.png";
 import styles from "./styles/Header.module.scss";
+import { Container } from "../container/Container";
+
+const FACEBOOKLINK = import.meta.env.VITE_FACEBOOKLINK;
+const INSTALINK = import.meta.env.VITE_INSTALINK;
+const YOUTUBELINK = import.meta.env.VITE_YOUTUBELINK;
 
 export default function Header() {
   return (
-    <>
+    <Container>
       <header>
         <nav className={styles.headerNav}>
           <div className={styles.socials}>
             <a
-              href="https://facebook.com"
+              href={FACEBOOKLINK as string}
               aria-label="Facebook"
               target="_blank"
               rel="noopener noreferrer"
@@ -20,7 +25,7 @@ export default function Header() {
               <img src={facebook} />
             </a>
             <a
-              href="https://instagram.com"
+              href={INSTALINK}
               aria-label="Instagram"
               target="_blank"
               rel="noopener noreferrer"
@@ -28,7 +33,7 @@ export default function Header() {
               <img src={instagram} />
             </a>
             <a
-              href="https://youtube.com"
+              href={YOUTUBELINK}
               aria-label="YouTube"
               target="_blank"
               rel="noopener noreferrer"
@@ -43,6 +48,6 @@ export default function Header() {
           <LangSwitcher />
         </nav>
       </header>
-    </>
+    </Container>
   );
 }

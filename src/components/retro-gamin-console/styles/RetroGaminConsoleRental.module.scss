@@ -1,0 +1,101 @@
+.retroGaming {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  flex-wrap: wrap;
+
+  @media (min-width: 768px) {
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+
+  @media (min-width: 1024px) {
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+    align-items: center;
+  }
+
+  .mainText {
+    color: white;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+
+    .firstText {
+      font-size: 28px;
+      max-width: 90%;
+      margin: 0 auto;
+
+      @media (min-width: 768px) {
+        margin: 0 auto;
+        font-size: 42px;
+        max-width: 80%;
+      }
+
+      @media (min-width: 1024px) {
+        margin: 0;
+        font-size: 48px;
+        max-width: 80%;
+      }
+    }
+
+    @media (min-width: 1024px) {
+      max-width: 44%;
+      text-align: left;
+    }
+
+    .priceText {
+      font-size: 14px;
+
+      @media (min-width: 425px) {
+        font-size: 16px;
+      }
+    }
+  }
+
+  .rentalGaminBlockRoot {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+
+    @media (min-width: 768px) {
+      flex-wrap: wrap;
+      gap: 20px;
+      justify-content: center;
+      flex-direction: row;
+    }
+
+    .rentalGaminBlock {
+      display: flex;
+      flex-direction: column;
+      color: white;
+
+      @media (min-width: 768px) {
+        min-height: 380px;
+      }
+
+      .rentalGaminImageBlock {
+        display: flex;
+        justify-content: center;
+        margin-bottom: 15px;
+      }
+
+      .rentalGaminTextBlock {
+        text-align: center;
+        .rentalGaminText {
+        }
+
+        .rentalGaminSecondText {
+          margin: 0 auto;
+
+          @media (min-width: 768px) {
+            width: 250px;
+          }
+        }
+      }
+    }
+  }
+}

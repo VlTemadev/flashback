@@ -8,7 +8,6 @@ $social-icon-size-mobile: 1.5rem; // ~24px;
   display: grid;
   grid-template-columns: 1fr auto 1fr;
   align-items: center;
-  padding: 1rem;
   min-height: $logo-size-desktop;
   position: relative;
 
@@ -61,7 +60,6 @@ $social-icon-size-mobile: 1.5rem; // ~24px;
   }
 
   @media (max-width: 600px) {
-    padding: 0.5rem;
     min-height: $logo-size-mobile;
 
     .logo img {

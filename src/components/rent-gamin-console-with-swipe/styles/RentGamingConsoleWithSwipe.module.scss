@@ -1,0 +1,148 @@
+.rentGaminConsoleMainContainer {
+  display: flex;
+  flex-direction: column;
+
+  @media (min-width: 1024px) {
+    flex-direction: row;
+  }
+
+  .mainText {
+    position: relative;
+    color: white;
+    font-size: 30px;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 10px;
+    max-width: 80%;
+    margin: 0 auto 25px auto;
+
+    @media (min-width: 1024px) {
+      justify-content: center;
+      align-items: flex-start;
+      text-align: left;
+    }
+
+    .firstText {
+      font-size: 28px;
+      @media (min-width: 1024px) {
+        font-size: 52px;
+        max-width: 70%;
+      }
+    }
+
+    .gamepadeImg {
+      width: 45px;
+
+      @media (min-width: 768px) {
+        width: 60px;
+      }
+    }
+
+    .gamepade1 {
+      position: absolute;
+      top: 40%;
+      left: -10%;
+      animation: floatX 4.6s ease-in-out infinite;
+      will-change: transform;
+
+      @media (min-width: 768px) {
+        top: inherit !important;
+        left: 10;
+        bottom: 0 !important;
+      }
+
+      @media (min-width: 1024px) {
+        left: 0;
+        top: inherit !important;
+        bottom: -25px !important;
+      }
+    }
+    .gamepade2 {
+      position: absolute;
+      top: -10%;
+      right: 0;
+      z-index: 10;
+      animation: floatY 5.2s ease-in-out infinite;
+      will-change: transform;
+
+      @media (min-width: 768px) {
+        top: -40%;
+        right: 20px;
+      }
+
+      @media (min-width: 1024px) {
+        top: 10px;
+        right: 50%;
+      }
+    }
+
+    .gamepade3 {
+      position: absolute;
+      right: -15%;
+      bottom: 40%;
+      z-index: 10;
+      animation: floatZ 6.1s ease-in-out infinite;
+      will-change: transform;
+
+      @media (min-width: 1024px) {
+        width: 70px;
+        bottom: 38%;
+        right: 20%;
+      }
+    }
+
+    .secondText {
+      font-size: 16px;
+    }
+  }
+
+  .swiperContainer {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+}
+
+@keyframes floatX {
+  0% {
+    transform: translateY(0) rotate(-2deg);
+  }
+  50% {
+    transform: translateY(-16px) rotate(3deg);
+  }
+  100% {
+    transform: translateY(0) rotate(-2deg);
+  }
+}
+
+@keyframes floatY {
+  0% {
+    transform: translateY(0) rotate(2deg);
+  }
+  50% {
+    transform: translateY(12px) rotate(-4deg);
+  }
+  100% {
+    transform: translateY(0) rotate(2deg);
+  }
+}
+
+@keyframes floatZ {
+  0% {
+    transform: translateY(0) rotate(0deg);
+  }
+  25% {
+    transform: translateY(-10px) rotate(4deg);
+  }
+  50% {
+    transform: translateY(0) rotate(-3deg);
+  }
+  75% {
+    transform: translateY(10px) rotate(2deg);
+  }
+  100% {
+    transform: translateY(0) rotate(0deg);
+  }
+}
