@@ -1,7 +1,7 @@
-import img1 from "@/assets/img/retro-gaming-rental/img1.png";
-import img2 from "@/assets/img/retro-gaming-rental/img2.png";
-import img3 from "@/assets/img/retro-gaming-rental/img3.png";
-import img4 from "@/assets/img/retro-gaming-rental/img4.png";
+import img1 from "@/assets/img/retro-gaming-rental/img1.webp";
+import img2 from "@/assets/img/retro-gaming-rental/img2.webp";
+import img3 from "@/assets/img/retro-gaming-rental/img3.webp";
+import img4 from "@/assets/img/retro-gaming-rental/img4.webp";
 
 export const CONTENT = [
   {

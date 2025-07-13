@@ -26,7 +26,6 @@
 
     .firstText {
       font-size: 28px;
-      max-width: 90%;
       margin: 0 auto;
 
       @media (min-width: 768px) {
@@ -37,13 +36,18 @@
 
       @media (min-width: 1024px) {
         margin: 0;
-        font-size: 48px;
+        font-size: 52px;
         max-width: 80%;
       }
     }
 
     @media (min-width: 1024px) {
       max-width: 44%;
+      text-align: left;
+    }
+
+    @media (min-width: 1280px) {
+      max-width: 100%;
       text-align: left;
     }
 
