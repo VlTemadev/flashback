@@ -1,0 +1,15 @@
+.pacmanIframe {
+  width: 100%;
+  max-width: 1200px;
+  height: 90dvh;
+  border: none;
+  margin: 0 auto;
+  padding: 50px;
+  display: block;
+}
+
+@media (max-width: 425px) {
+  .pacmanIframe {
+    padding: 0;
+  }
+}
