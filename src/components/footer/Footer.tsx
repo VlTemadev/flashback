@@ -13,17 +13,21 @@ export default function Footer() {
         <div className={styles.FooterImgBlock}>
           <div className={styles.FooterImg}>
             <img className={styles.mainImg} src={inst2} alt="inst1" />
-            <img src={flashbackargade} alt="arcade" />
-          </div>
-          <div className={styles.FooterImg}>
+            <img
+              className={styles.secondImg}
+              src={flashbackargade}
+              alt="flashbackargade"
+            />
             <img className={styles.mainImg} src={inst1} alt="inst1" />
-            <img src={flashbackgaming} alt="flashbackgaming" />
-          </div>
-          <div className={styles.FooterImg}>
-            <img className={styles.mainImg} src={whatsapp} alt="inst1" />
-            <div>
+            <img
+              className={styles.secondImg}
+              src={flashbackgaming}
+              alt="flashbackargade"
+            />
+            <img className={styles.mainImg} src={whatsapp} alt="whatsapp" />
+            <div className={styles.footerContactInfo}>
               <h3 className={styles.phone}>+7 705 206 03 76</h3>
-              <p>flash@back.kz</p>
+              <p className={styles.email}>flash@back.kz</p>
             </div>
           </div>
         </div>

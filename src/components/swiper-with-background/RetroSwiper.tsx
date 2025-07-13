@@ -10,7 +10,7 @@ import { useTranslation } from "react-i18next";
 interface Slide {
   id: string | number;
   src: string;
-  title: string;
+  title?: string;
   text: string;
 }
 
@@ -76,10 +76,10 @@ export default function RetroSwiperWithBg({
         <div className={styles.swiperPagination} />
         <div className={styles.slideCaption}>
           <p className={styles.slideCaptionTitle}>
-            {t(slides[activeIdx]?.title)}
+            {t(slides[activeIdx]?.title ?? "")}
           </p>
           <p className={styles.slideCaptionText}>
-            {t(slides[activeIdx]?.text)}
+            {t(slides[activeIdx]?.text ?? "")}
           </p>
         </div>
       </div>

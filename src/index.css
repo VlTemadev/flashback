@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+
 *,
 *::before,
 *::after {
@@ -31,7 +33,7 @@ body {
 }
 
 .swiper-pagination {
-  width: 60px !important;
+  width: 80px !important;
   right: 10px !important;
   left: inherit !important;
   top: 10px !important;

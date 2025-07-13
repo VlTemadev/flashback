@@ -44,7 +44,7 @@ export default function SlotMachinesWithGames() {
     {
       id: 1,
       src: barrel,
-      title: "Barrel",
+      title: "БОЧКА",
       text: "barrel_text",
     },
   ];

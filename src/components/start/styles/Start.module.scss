@@ -28,7 +28,7 @@ $breakpoint-mobile: 600px;
   .bgImageBlock__content {
     position: relative;
     width: 100%;
-    min-height: 100vh;
+    min-height: 100dvh;
     display: flex;
     flex-direction: column;
   }
@@ -49,6 +49,7 @@ $breakpoint-mobile: 600px;
     }
 
     .mainSecondText {
+      font-family: "Montserrat", sans-serif;
       font-size: $main-second-text-desktop-size;
     }
   }
@@ -61,7 +62,7 @@ $breakpoint-mobile: 600px;
     .mainTextBlock {
       gap: $main-gap-mobile;
       width: 100%;
-      top: 25%;
+      top: 20%;
 
       max-width: $main-textblock-mobile-max-width;
 
@@ -77,10 +78,11 @@ $breakpoint-mobile: 600px;
 }
 
 .bottomTextBlock {
+  font-family: "Montserrat", sans-serif;
   position: absolute;
   bottom: 5%;
   left: 50%;
-  width: 100%;
+  width: 95%;
   max-width: 500px;
   display: flex;
   flex-direction: column;
